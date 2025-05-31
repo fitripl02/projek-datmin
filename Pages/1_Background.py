@@ -1,5 +1,7 @@
-import streamlit as st
-
-st.set_page_config(page_title="Background")
-st.title("Background")
-st.write("The restaurant business continues to thrive in Indonesia and many other countries. Despite facing various challenges, this industry has shown resilience and adaptability. One key to success lies in the ability of restaurant owners to adopt innovative strategies to attract and retain customers. These strategies include optimizing online food delivery platforms such as Grab and Gojek, offering competitive pricing, and enhancing menu diversity and quality of service. Such developments indicate that the restaurant business remains a vital part of the urban lifestyle, evolving to meet changing consumer preferences. Semarang is a developing urban area with a diverse culinary scene and a wide range of restaurants. For someone planning to open a new restaurant in Semarang, it is essential to conduct a thorough study of the existing restaurants in the area. In this context, clustering can be a valuable tool for profiling the restaurants in Semarang. Through such profiling, an entrepreneur can identify popular categories, customer preferences, and competitive gaps. For instance, she may decide to open a restaurant in a category that has high ratings but fewer competitors, increasing her chances of success.")
+if page.startswith("1"):
+    st.title("📚 Background")
+    st.write("""
+    Dashboard ini dibuat untuk menganalisis restoran di Semarang berdasarkan berbagai fitur seperti rating, harga, dan lokasi. 
+    Dengan menggunakan visualisasi data dan teknik clustering, kita dapat melihat pola dan rekomendasi yang muncul dari dataset restoran tersebut.
+    """)
+    st.dataframe(df.head())
